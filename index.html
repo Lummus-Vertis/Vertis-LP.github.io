@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artesanato Direto | Do artesao para a sua casa</title>
+  <meta name="description" content="Conectamos voce diretamente aos mestres artesao que transformam barro, madeira, fibra e couro em arte viva. Sem intermediarios, sem producao em massa.">
+  <meta name="keywords" content="artesanato, exportacao, importacao, ceramica, madeira, tecelagem, couro, comercio justo">
+  <meta property="og:title" content="Artesanato Direto | Do artesao para a sua casa">
+  <meta property="og:description" content="Conectamos voce diretamente aos mestres artesao. Sem intermediarios, sem producao em massa.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <!-- Google Fonts: Fraunces (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS sera linkado na Etapa 5 -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Artesanato Direto",
+    "description": "Empresa de exportacao e importacao de produtos artesanais com conexao direta com produtores locais.",
+    "url": "https://www.artesanatodireto.com",
+    "logo": "https://www.artesanatodireto.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/artesanatodireto",
+      "https://www.facebook.com/artesanatodireto"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <!-- Logo -->
+      <a href="#home" class="navbar__logo" aria-label="Artesanato Direto - Pagina inicial">
+        <span class="navbar__logo-text">Artesanato Direto</span>
+      </a>
+
+      <!-- Navegacao desktop -->
+      <nav class="navbar__nav" aria-label="Navegacao principal">
+        <ul class="navbar__menu">
+          <li><a href="#home" class="navbar__link navbar__link--active">Inicio</a></li>
+          <li><a href="#solucao" class="navbar__link">Sobre Nos</a></li>
+          <li><a href="#catalogo" class="navbar__link">Catalogo</a></li>
+          <li><a href="#artesaos" class="navbar__link">Artesaos</a></li>
+          <li><a href="#blog" class="navbar__link">Blog</a></li>
+          <li><a href="#contato" class="navbar__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Acoes a direita -->
+      <div class="navbar__actions">
+        <!-- Seletor de idioma -->
+        <div class="lang-switcher" role="group" aria-label="Seletor de idioma">
+          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="pt" aria-label="Portugues">PT</button>
+          <span class="lang-switcher__divider" aria-hidden="true">|</span>
+          <button class="lang-switcher__btn" data-lang="en" aria-label="English">EN</button>
+          <span class="lang-switcher__divider" aria-hidden="true">|</span>
+          <button class="lang-switcher__btn" data-lang="es" aria-label="Espanol">ES</button>
+        </div>
+
+        <!-- CTA compacto -->
+        <a href="#contato" class="btn btn--primary btn--compact">Solicitar Cotacao</a>
+
+        <!-- Toggle mobile -->
+        <button class="navbar__toggle" id="navbarToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbarMobile">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile (colapsavel) -->
+    <nav class="navbar__mobile" id="navbarMobile" aria-label="Navegacao mobile" hidden>
+      <ul class="navbar__mobile-menu">
+        <li><a href="#home" class="navbar__mobile-link">Inicio</a></li>
+        <li><a href="#solucao" class="navbar__mobile-link">Sobre</a></li>
+        <li><a href="#catalogo" class="navbar__mobile-link">Catalogo</a></li>
+        <li><a href="#artesaos" class="navbar__mobile-link">Artesaos</a></li>
+        <li><a href="#blog" class="navbar__mobile-link">Blog</a></li>
+        <li><a href="#contato" class="navbar__mobile-link">Contato</a></li>
+        <li><a href="#contato" class="btn btn--primary btn--full-width">Solicitar Cotacao</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home" aria-label="Apresentacao">
+      <!-- Imagem de fundo: artesao trabalhando (placeholder) -->
+      <div class="hero__bg" role="img" aria-label="Artesao modelando ceramica em seu atelier">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Cada peca tem uma historia.<br>
+            Cada historia, um artesao.
+          </h1>
+          <p class="hero__subtitle">
+            Conectamos voce diretamente aos mestres artesao que transformam barro, madeira,
+            fibra e couro em arte viva. Sem intermediarios, sem producao em massa --
+            so maos que criam com alma.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#catalogo" class="btn btn--outline-dark">Explorar Catalogo</a>
+            <a href="#contato" class="btn btn--primary">Solicitar Cotacao</a>
+          </div>
+
+          <div class="hero__trust">
+            <span class="hero__trust-item">
+              <!-- Icone: check -->
+              <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Entrega internacional rastreada
+            </span>
+            <span class="hero__trust-item">
+              <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Comercio justo verificado
+            </span>
+            <span class="hero__trust-item">
+              <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Garantia de autenticidade
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Role para descobrir</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ==================== PROBLEM SECTION ==================== -->
+    <section class="problem" id="problema" aria-labelledby="problem-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2 class="section-header__title" id="problem-title">
+            Voce ja comprou uma peca "artesanal" e sentiu que algo faltava?
+          </h2>
+          <p class="section-header__subtitle">
+            O mercado se encheu de produtos que se dizem artesanais, mas nao tem alma,
+            nao tem historia, nao tem maos por tras.
+          </p>
+        </header>
+
+        <div class="problem__grid">
+          <!-- Dor 1 -->
+          <article class="problem__card">
+            <div class="problem__icon" aria-hidden="true">
+              <!-- Icone: fabrica/maquina -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M4 36V16L14 22V16L24 22V16L34 22V36H4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 30H12M16 30H20M24 30H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="problem__card-title">Parece feito a maquina, mas custou como arte</h3>
+            <p class="problem__card-text">
+              Voce paga por exclusividade e recebe algo que parece saido de uma fabrica.
+              O charme do artesanal some quando ele nao tem historia por tras.
+            </p>
+          </article>
+
+          <!-- Dor 2 -->
+          <article class="problem__card">
+            <div class="problem__icon" aria-hidden="true">
+              <!-- Icone: interrogacao/mascara -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
+                <path d="M15 16C15 13 17 11 20 11C23 11 25 13 25 16C25 19 20 19 20 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="20" cy="27" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="problem__card-title">Nao tem rosto, nao tem nome, nao tem origem</h3>
+            <p class="problem__card-text">
+              A peca chegou, mas voce nao sabe quem fez, de onde veio, qual a tecnica.
+              E so mais um objeto na prateleira -- sem conexao, sem significado.
+            </p>
+          </article>
+
+          <!-- Dor 3 -->
+          <article class="problem__card">
+            <div class="problem__icon" aria-hidden="true">
+              <!-- Icone: dinheiro/cifrao cortado -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M24 9C22 8 21 8 20 8C16 8 13 10 13 14C13 22 27 18 27 26C27 30 24 32 20 32C18 32 16 32 14 31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 4V36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+              </svg>
+            </div>
+            <h3 class="problem__card-title">O preco nao bate com o valor</h3>
+            <p class="problem__card-text">
+              Intermediarios sobem o preco em cada camada. O artesao recebe uma fracao
+              e voce paga o triplo. O comercio justo vira so um selo bonito no site.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Separador decorativo -->
+    <div class="divider" aria-hidden="true">
+      <span class="divider__line"></span>
+      <span class="divider__diamond"></span>
+      <span class="divider__line"></span>
+    </div>
+
+    <!-- ==================== SOLUTION SECTION ==================== -->
+    <section class="solution" id="solucao" aria-labelledby="solution-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2 class="section-header__title section-header__title--light" id="solution-title">
+            A gente cortou o intermediario.<br>Voce compra direto de quem faz.
+          </h2>
+          <p class="section-header__subtitle section-header__subtitle--light">
+            A Artesanato Direto nasceu de uma ideia simples: se o valor do artesanal
+            esta nas maos que o criam, por que o artesao nao e o centro da historia?
+          </p>
+        </header>
+
+        <div class="solution__text">
+          <p>
+            Nosso modelo e direto. Nosso time viaja ate as comunidades produtoras, seleciona
+            os artesaos pelo dominio da tecnica e pela autenticidade do trabalho, e construiu
+            uma ponte logistica que leva cada peca do atelier do artesao ate a sua porta --
+            sem camadas de markup que inflaram o preco sem agregar valor.
+          </p>
+        </div>
+
+        <div class="solution__pillars">
+          <!-- Pilar 1 -->
+          <article class="solution__pillar">
+            <span class="solution__pillar-number">01</span>
+            <h3 class="solution__pillar-title">Selecao na origem</h3>
+            <p class="solution__pillar-text">
+              Nao compramos de estoque. Visitamos atelieres, conhecemos as maos,
+              entendemos a tecnica. So entra no catalogo o que tem historia real.
+            </p>
+          </article>
+
+          <!-- Pilar 2 -->
+          <article class="solution__pillar">
+            <span class="solution__pillar-number">02</span>
+            <h3 class="solution__pillar-title">Comercio justo verificado</h3>
+            <p class="solution__pillar-text">
+              O artesao recebe proporcional ao valor real da peca. Nao e caridade,
+              e respeito pelo oficio.
+            </p>
+          </article>
+
+          <!-- Pilar 3 -->
+          <article class="solution__pillar">
+            <span class="solution__pillar-number">03</span>
+            <h3 class="solution__pillar-title">Logistica de exportacao completa</h3>
+            <p class="solution__pillar-text">
+              Cuidamos de documentacao, embalagem, transporte e aduana.
+              Do atelier pra sua casa, sem dor de cabeca.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ARTESOES SECTION (Diferencial) ==================== -->
+    <section class="artesaos" id="artesaos" aria-labelledby="artesaos-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-header__title" id="artesaos-title">As maos por tras de cada peca</h2>
+          <p class="section-header__subtitle">
+            Estes nao sao fornecedores. Sao parceiros. Cada um tem nome, regiao, tecnica
+            e uma historia que merece ser contada.
+          </p>
+        </header>
+
+        <!-- Layout editorial assimetrico -->
+        <div class="artesaos__grid">
+          <!-- Artesao 1 - destaque grande (60% largura) -->
+          <article class="artesaos__card artesaos__card--large">
+            <div class="artesaos__image artesaos__image--1" role="img" aria-label="[Nome do Artesao] trabalhando em seu atelier">
+              <div class="artesaos__overlay"></div>
+              <div class="artesaos__info">
+                <h3 class="artesaos__name">[Nome do Artesao]</h3>
+                <p class="artesaos__meta">[Regiao/Cidade] | Ceramica | [X] anos de oficio</p>
+                <p class="artesaos__quote">"[Frase curta do artesao sobre o que a criacao significa pra ele]"</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artesao 2 - menor (40% largura, deslocado) -->
+          <article class="artesaos__card artesaos__card--small artesaos__card--offset">
+            <div class="artesaos__image artesaos__image--2" role="img" aria-label="[Nome do Artesao] em seu trabalho com madeira">
+              <div class="artesaos__overlay"></div>
+              <div class="artesaos__info">
+                <h3 class="artesaos__name">[Nome do Artesao]</h3>
+                <p class="artesaos__meta">[Regiao/Cidade] | Madeira | [X] anos de oficio</p>
+                <p class="artesaos__quote">"[Frase curta do artesao]"</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artesao 3 - coluna lateral -->
+          <article class="artesaos__card artesaos__card--side">
+            <div class="artesaos__image artesaos__image--3" role="img" aria-label="[Nome do Artesao] tecendo em seu tear">
+              <div class="artesaos__overlay"></div>
+              <div class="artesaos__info">
+                <h3 class="artesaos__name">[Nome do Artesao]</h3>
+                <p class="artesaos__meta">[Regiao/Cidade] | Tecelagem | [X] anos de oficio</p>
+                <p class="artesaos__quote">"[Frase curta do artesao]"</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artesao 4 - couro -->
+          <article class="artesaos__card artesaos__card--side">
+            <div class="artesaos__image artesaos__image--4" role="img" aria-label="[Nome do Artesao] trabalhando couro">
+              <div class="artesaos__overlay"></div>
+              <div class="artesaos__info">
+                <h3 class="artesaos__name">[Nome do Artesao]</h3>
+                <p class="artesaos__meta">[Regiao/Cidade] | Couro | [X] anos de oficio</p>
+                <p class="artesaos__quote">"[Frase curta do artesao]"</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="artesaos__cta">
+          <a href="#artesaos" class="btn btn--secondary">Conheca todos os artesaos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NUMEROS DE IMPACTO ==================== -->
+    <section class="impact" id="impacto" aria-labelledby="impact-title">
+      <div class="container">
+        <div class="divider divider--light" aria-hidden="true">
+          <span class="divider__line"></span>
+          <span class="divider__diamond"></span>
+          <span class="divider__line"></span>
+        </div>
+
+        <header class="section-header section-header--center">
+          <h2 class="section-header__title section-header__title--light" id="impact-title">
+            O que esses numeros representam
+          </h2>
+        </header>
+
+        <div class="impact__grid">
+          <div class="impact__item">
+            <span class="impact__number" data-target="0" aria-label="Artesaos parceiros">[X]</span>
+            <span class="impact__label">Artesaos parceiros</span>
+          </div>
+          <div class="impact__item">
+            <span class="impact__number" data-target="0" aria-label="Paises atendidos">[X]</span>
+            <span class="impact__label">Paises atendidos</span>
+          </div>
+          <div class="impact__item">
+            <span class="impact__number" data-target="0" aria-label="Anos de mercado">[X]</span>
+            <span class="impact__label">Anos de mercado</span>
+          </div>
+          <div class="impact__item">
+            <span class="impact__number" data-target="0" aria-label="Porcentagem da receita para artesaos">[X]%</span>
+            <span class="impact__label">Da receita vai direto pros artesaos</span>
+          </div>
+        </div>
+
+        <div class="divider divider--light" aria-hidden="true">
+          <span class="divider__line"></span>
+          <span class="divider__diamond"></span>
+          <span class="divider__line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CATALOGO DESTAQUE ==================== -->
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2 class="section-header__title" id="catalog-title">Pecas que tem dono, nome e historia</h2>
+          <p class="section-header__subtitle">
+            Cada item do nosso catalogo passa pelas maos de um artesao que colocou
+            seu nome e sua tecnica naquela peca. Nada e producao em massa.
+          </p>
+        </header>
+
+        <!-- Filtros de categoria -->
+        <div class="catalog__filters" role="group" aria-label="Filtrar por categoria">
+          <button class="catalog__filter catalog__filter--active" data-filter="all">Todos</button>
+          <button class="catalog__filter" data-filter="ceramica">Ceramica</button>
+          <button class="catalog__filter" data-filter="madeira">Madeira</button>
+          <button class="catalog__filter" data-filter="tecelagem">Tecelagem</button>
+          <button class="catalog__filter" data-filter="couro">Couro</button>
+        </div>
+
+        <!-- Grid de produtos -->
+        <div class="catalog__grid">
+          <!-- Produto 1 -->
+          <article class="product-card" data-category="ceramica">
+            <div class="product-card__image" role="img" aria-label="Vaso de ceramica artesanato">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Ceramica</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 2 -->
+          <article class="product-card" data-category="madeira">
+            <div class="product-card__image" role="img" aria-label="Bowl de madeira artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Madeira</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 3 -->
+          <article class="product-card" data-category="tecelagem">
+            <div class="product-card__image" role="img" aria-label="Tapeçaria de tecelagem artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Tecelagem</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 4 -->
+          <article class="product-card" data-category="couro">
+            <div class="product-card__image" role="img" aria-label="Bolsa de couro artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Couro</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 5 -->
+          <article class="product-card" data-category="ceramica">
+            <div class="product-card__image" role="img" aria-label="Prato de ceramica artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Ceramica</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 6 -->
+          <article class="product-card" data-category="madeira">
+            <div class="product-card__image" role="img" aria-label="Estatua de madeira artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Madeira</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 7 -->
+          <article class="product-card" data-category="tecelagem">
+            <div class="product-card__image" role="img" aria-label="Tapete de tecelagem artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Tecelagem</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+
+          <!-- Produto 8 -->
+          <article class="product-card" data-category="couro">
+            <div class="product-card__image" role="img" aria-label="Carteira de couro artesanal">
+              <div class="product-card__hover-overlay">
+                <div class="product-card__hover-info">
+                  <p class="product-card__artisan">Feito por [Nome do Artesao]</p>
+                  <p class="product-card__region">[Regiao]</p>
+                  <a href="#contato" class="product-card__link">Tenho interesse</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Couro</span>
+              <h3 class="product-card__name">[Nome da Peca]</h3>
+              <p class="product-card__origin">Origem: [Regiao]</p>
+              <p class="product-card__meta">Dimensoes: [X] x [X] cm</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="catalog__cta">
+          <a href="#contato" class="btn btn--primary">Ver catalogo completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICACOES ==================== -->
+    <section class="certifications" id="certificacoes" aria-labelledby="cert-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2 class="section-header__title" id="cert-title">Credibilidade que voce pode conferir</h2>
+        </header>
+
+        <div class="certifications__grid">
+          <!-- Selo 1 - Placeholder -->
+          <div class="certifications__seal" role="img" aria-label="[Nome da Certificacao]">
+            <div class="certifications__circle">
+              <!-- Icone placeholder: selo -->
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <path d="M18 3L22 10L30 11L24 17L26 25L18 21L10 25L12 17L6 11L14 10L18 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="certifications__label">[Certificacao 1]</span>
+          </div>
+
+          <!-- Selo 2 -->
+          <div class="certifications__seal" role="img" aria-label="[Nome da Certificacao]">
+            <div class="certifications__circle">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <path d="M18 3L22 10L30 11L24 17L26 25L18 21L10 25L12 17L6 11L14 10L18 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="certifications__label">[Certificacao 2]</span>
+          </div>
+
+          <!-- Selo 3 -->
+          <div class="certifications__seal" role="img" aria-label="[Nome da Certificacao]">
+            <div class="certifications__circle">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <path d="M18 3L22 10L30 11L24 17L26 25L18 21L10 25L12 17L6 11L14 10L18 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="certifications__label">[Certificacao 3]</span>
+          </div>
+
+          <!-- Selo 4 -->
+          <div class="certifications__seal" role="img" aria-label="[Nome da Certificacao]">
+            <div class="certifications__circle">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <path d="M18 3L22 10L30 11L24 17L26 25L18 21L10 25L12 17L6 11L14 10L18 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="certifications__label">[Certificacao 4]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="cta-final" id="cta-final" aria-labelledby="cta-final-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <h2 class="section-header__title section-header__title--light" id="cta-final-title">
+            Leve pra casa uma peca que tem dono, nome e historia
+          </h2>
+          <p class="section-header__subtitle section-header__subtitle--light">
+            Explore o catalogo ou fale com nosso time comercial para pedidos
+            de exportacao em volume.
+          </p>
+        </header>
+
+        <div class="cta-final__buttons">
+          <a href="#catalogo" class="btn btn--primary">Ver catalogo completo</a>
+          <a href="#contato" class="btn btn--outline-dark">Falar com nosso time comercial</a>
+        </div>
+
+        <div class="cta-final__trust">
+          <span class="cta-final__trust-item">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Entrega internacional rastreada
+          </span>
+          <span class="cta-final__trust-item">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Pagamento seguro
+          </span>
+          <span class="cta-final__trust-item">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Garantia de autenticidade
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTATO / FORMULARIO DE LEAD ==================== -->
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__grid">
+          <!-- Coluna info -->
+          <div class="contact__info">
+            <h2 class="contact__title" id="contact-title">Solicite sua cotacao</h2>
+            <p class="contact__text">
+              Fale com a gente. Respondemos em ate [X] horas.
+              Atendemos tanto pedidos individuais (pessoa fisica) quanto
+              pedidos de exportacao em volume (empresas).
+            </p>
+
+            <div class="contact__channels">
+              <a href="https://wa.me/5500000000000" class="contact__channel" aria-label="Falar no WhatsApp">
+                <span class="contact__channel-icon">
+                  <!-- Icone WhatsApp -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.59 3.39 17.09L2 22L7.06 20.62C8.51 21.44 10.2 21.93 12 21.93C17.52 21.93 22 17.45 22 11.93C22 6.41 17.52 2 12 2ZM12 20C10.4 20 8.89 19.57 7.58 18.81L7.32 18.66L4.5 19.41L5.27 16.66L5.1 16.39C4.27 15.07 3.83 13.55 3.83 12C3.83 7.5 7.5 3.83 12 3.83C16.5 3.83 20.17 7.5 20.17 12C20.17 16.5 16.5 20 12 20Z"/>
+                  </svg>
+                </span>
+                <span class="contact__channel-text">
+                  <strong>WhatsApp</strong>
+                  [Numero]
+                </span>
+              </a>
+
+              <a href="mailto:contato@artesanatodireto.com" class="contact__channel">
+                <span class="contact__channel-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
+                    <path d="M22 6L12 13L2 6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="contact__channel-text">
+                  <strong>E-mail comercial</strong>
+                  contato@artesanatodireto.com
+                </span>
+              </a>
+
+              <a href="tel:+5500000000000" class="contact__channel">
+                <span class="contact__channel-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 16.92V19.92C22 20.52 21.52 21 20.92 21C10.39 21 2 12.61 2 2.08C2 1.48 2.48 1 3.08 1H6.08C6.68 1 7.16 1.48 7.16 2.08C7.16 3.68 7.44 5.22 7.96 6.66C8.08 7.04 7.99 7.46 7.69 7.76L6.29 9.16C7.68 11.82 9.84 13.98 12.5 15.37L13.9 13.97C14.2 13.67 14.62 13.58 15 13.7C16.44 14.22 17.98 14.5 19.58 14.5C20.18 14.5 20.66 14.98 20.66 15.58V16.92" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="contact__channel-text">
+                  <strong>Telefone</strong>
+                  [Numero]
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna formulario -->
+          <div class="contact__form-wrapper">
+            <form class="lead-form" id="leadForm" novalidate>
+              <h3 class="lead-form__title">Solicitar cotacao</h3>
+
+              <div class="lead-form__group">
+                <label for="clientType" class="lead-form__label">Tipo de cliente *</label>
+                <select id="clientType" name="clientType" class="lead-form__select" required>
+                  <option value="" disabled selected>Selecione...</option>
+                  <option value="pf">Pessoa Fisica</option>
+                  <option value="pj">Empresa</option>
+                </select>
+              </div>
+
+              <div class="lead-form__group">
+                <label for="name" class="lead-form__label">Nome completo *</label>
+                <input type="text" id="name" name="name" class="lead-form__input" placeholder="Seu nome" required>
+              </div>
+
+              <div class="lead-form__row">
+                <div class="lead-form__group">
+                  <label for="email" class="lead-form__label">E-mail *</label>
+                  <input type="email" id="email" name="email" class="lead-form__input" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="lead-form__group">
+                  <label for="phone" class="lead-form__label">WhatsApp *</label>
+                  <input type="tel" id="phone" name="phone" class="lead-form__input" placeholder="(00) 00000-0000" required>
+                </div>
+              </div>
+
+              <div class="lead-form__group">
+                <label class="lead-form__label">Categoria de interesse *</label>
+                <div class="lead-form__checkboxes">
+                  <label class="lead-form__checkbox">
+                    <input type="checkbox" name="category" value="ceramica">
+                    <span>Ceramica</span>
+                  </label>
+                  <label class="lead-form__checkbox">
+                    <input type="checkbox" name="category" value="madeira">
+                    <span>Madeira</span>
+                  </label>
+                  <label class="lead-form__checkbox">
+                    <input type="checkbox" name="category" value="tecelagem">
+                    <span>Tecelagem</span>
+                  </label>
+                  <label class="lead-form__checkbox">
+                    <input type="checkbox" name="category" value="couro">
+                    <span>Couro</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="lead-form__group">
+                <label for="country" class="lead-form__label">Pais de destino *</label>
+                <select id="country" name="country" class="lead-form__select" required>
+                  <option value="" disabled selected>Selecione...</option>
+                  <option value="BR">Brasil</option>
+                  <option value="US">Estados Unidos</option>
+                  <option value="ES">Espanha</option>
+                  <option value="PT">Portugal</option>
+                  <option value="FR">Franca</option>
+                  <option value="DE">Alemanha</option>
+                  <option value="other">Outro</option>
+                </select>
+              </div>
+
+              <div class="lead-form__group">
+                <label for="message" class="lead-form__label">Mensagem</label>
+                <textarea id="message" name="message" class="lead-form__textarea" rows="4" placeholder="Conte-nos sobre o que voce procura..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full-width">Enviar solicitacao</button>
+
+              <p class="lead-form__disclaimer">
+                Ao enviar, voce concorda em ser contatado pela nossa equipe comercial.
+                Seus dados nao serao compartilhados com terceiros.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Coluna 1: Logo + descricao -->
+        <div class="footer__col footer__col--brand">
+          <span class="footer__logo">Artesanato Direto</span>
+          <p class="footer__description">
+            Conectando mestres artesaos a pessoas que valorizam autenticidade.
+            Do atelier pra sua casa, sem intermediarios.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 2H15C13.67 2 12 2.67 12 5V8H9V12H12V22H16V12H19L20 8H16V5C16 4.5 16.5 4 17 4H20V2H18z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M16 8A6 6 0 0 1 22 14V22H18V14A2 2 0 0 0 16 12A2 2 0 0 0 14 14V22H10V14A6 6 0 0 1 16 8z"/>
+                <rect x="2" y="9" width="4" height="13"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Links rapidos -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Links rapidos</h4>
+          <ul class="footer__links">
+            <li><a href="#home" class="footer__link">Inicio</a></li>
+            <li><a href="#sobre" class="footer__link">Sobre Nos</a></li>
+            <li><a href="#artesaos" class="footer__link">Nossos Artesaos</a></li>
+            <li><a href="#como-funciona" class="footer__link">Como Funciona</a></li>
+            <li><a href="#blog" class="footer__link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Categorias -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Categorias</h4>
+          <ul class="footer__links">
+            <li><a href="#catalogo" class="footer__link" data-filter-link="ceramica">Ceramica</a></li>
+            <li><a href="#catalogo" class="footer__link" data-filter-link="madeira">Madeira</a></li>
+            <li><a href="#catalogo" class="footer__link" data-filter-link="tecelagem">Tecelagem</a></li>
+            <li><a href="#catalogo" class="footer__link" data-filter-link="couro">Couro</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contato + Newsletter -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contato</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:contato@artesanatodireto.com" class="footer__link">contato@artesanatodireto.com</a></li>
+            <li><a href="https://wa.me/5500000000000" class="footer__link">WhatsApp: [Numero]</a></li>
+            <li><a href="tel:+5500000000000" class="footer__link">[Telefone]</a></li>
+          </ul>
+
+          <form class="footer__newsletter" id="newsletterForm" novalidate>
+            <label for="newsletterEmail" class="footer__newsletter-label">Receba novidades</label>
+            <div class="footer__newsletter-input">
+              <input type="email" id="newsletterEmail" name="newsletterEmail" class="footer__newsletter-field" placeholder="seu@email.com" required>
+              <button type="submit" class="footer__newsletter-btn" aria-label="Inscrever na newsletter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Base do footer -->
+      <div class="footer__base">
+        <!-- Seletor de idioma no rodape -->
+        <div class="lang-switcher lang-switcher--footer" role="group" aria-label="Seletor de idioma">
+          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="pt">PT</button>
+          <span class="lang-switcher__divider" aria-hidden="true">|</span>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+          <span class="lang-switcher__divider" aria-hidden="true">|</span>
+          <button class="lang-switcher__btn" data-lang="es">ES</button>
+        </div>
+
+        <p class="footer__copyright">
+          (c) [ANO] Artesanato Direto. Todos os direitos reservados.
+          CNPJ: [XX.XXX.XXX/0001-XX]
+        </p>
+
+        <div class="footer__legal">
+          <a href="#" class="footer__link">Termos de Uso</a>
+          <a href="#" class="footer__link">Politica de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTAO FLUTUANTE WHATSAPP ==================== -->
+  <a href="https://wa.me/5500000000000"
+     class="whatsapp-float"
+     aria-label="Falar no WhatsApp"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.59 3.39 17.09L2 22L7.06 20.62C8.51 21.44 10.2 21.93 12 21.93C17.52 21.93 22 17.45 22 11.93C22 6.41 17.52 2 12 2ZM16.5 15.5C16.24 16.24 15.06 16.88 14.5 16.94C14 17 13.38 17 12.69 16.88C12.06 16.76 11.25 16.5 10.25 16.06C8.25 15.19 6.94 13.19 6.81 13.06C6.69 12.94 5.88 11.88 5.88 10.75C5.88 9.63 6.5 9.06 6.69 8.88C6.88 8.69 7.06 8.63 7.19 8.63C7.31 8.63 7.44 8.63 7.56 8.63C7.69 8.63 7.81 8.63 8 9.13C8.19 9.63 8.56 10.75 8.63 10.88C8.69 11.06 8.69 11.19 8.56 11.38C8.44 11.5 8.31 11.69 8.19 11.81C8.06 11.94 7.94 12.06 8.06 12.25C8.19 12.5 8.63 13.31 9.31 13.94C10.19 14.69 10.94 14.94 11.19 15.06C11.38 15.19 11.5 15.19 11.69 15C11.81 14.88 12.19 14.5 12.31 14.31C12.44 14.13 12.56 14.13 12.75 14.19C12.94 14.31 14 14.81 14.19 14.94C14.38 15.06 14.5 15.13 14.56 15.19C14.63 15.31 14.63 15.81 16.5 15.5Z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">Fale conosco</span>
+  </a>
+
+  <!-- ==================== SCRIPTS MINIMOS ==================== -->
+  <script>
+    // Toggle menu mobile
+    (function() {
+      var toggle = document.getElementById('navbarToggle');
+      var mobile = document.getElementById('navbarMobile');
+
+      if (toggle && mobile) {
+        toggle.addEventListener('click', function() {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', !expanded);
+          mobile.hidden = expanded;
+        });
+
+        // Fecha menu ao clicar em um link
+        mobile.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            toggle.setAttribute('aria-expanded', 'false');
+            mobile.hidden = true;
+          });
+        });
+      }
+    })();
+
+    // Filtro de catalogo
+    (function() {
+      var filters = document.querySelectorAll('.catalog__filter');
+      var products = document.querySelectorAll('.product-card');
+
+      filters.forEach(function(filter) {
+        filter.addEventListener('click', function() {
+          var category = this.getAttribute('data-filter');
+
+          filters.forEach(function(f) { f.classList.remove('catalog__filter--active'); });
+          this.classList.add('catalog__filter--active');
+
+          products.forEach(function(product) {
+            if (category === 'all' || product.getAttribute('data-category') === category) {
+              product.style.display = '';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+
+    // Smooth scroll para links internos
+    (function() {
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+
+    // Navbar scroll effect (muda opacidade/blur ao rolar)
+    (function() {
+      var navbar = document.getElementById('navbar');
+      if (navbar) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 50) {
+            navbar.classList.add('navbar--scrolled');
+          } else {
+            navbar.classList.remove('navbar--scrolled');
+          }
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
